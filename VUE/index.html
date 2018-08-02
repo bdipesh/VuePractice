@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>vue prac</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="first">
+      <span v-bind:title ="message">Hover</span>
+
+    </div>
+    <div class="second">
+       <span v-if = "seen">Now you seee</span>
+    </div>
+    <div id= "third">
+      <ol>
+        <li v-for="todo in todos">
+          {{todo.text}}
+        </li>
+      </ol>
+
+    </div>
+    <div id = "four">
+      <p>{{message}}</p>
+      <button type="button"  v-on:click = "reverseMessage" name="button">Reverse</button>
+
+    </div>
+    <script src = "app.js">
+
+    </script>
+
+  </body>
+</html>
