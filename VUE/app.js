@@ -26,7 +26,7 @@ var app4 =  new Vue({
     message:'you are awesome'
   },
   methods:{
-    reverseMessage: function(){
+    reverseMessage:()=>{
       this.message = this.message.split('').reverse().join('');
     }
   }
